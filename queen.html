@@ -1,0 +1,2827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/media/icon/favicon.png">
+    <title>Queen</title>
+    <style>
+        .head {
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            margin: 0px;
+            max-width: 100%;
+        }
+        .im {
+            height: 17.5cm;
+            width: 66.6%;
+            margin: 0;
+
+        }
+        .im1 {
+            width: 100%;
+            height: 100%;}
+        .media {
+            width: 60%;
+            height: 17.5cm;
+            background-color: rgb(255, 255, 255);
+        }
+        .media1 {
+            width: 100%;
+            height: 100%;
+            float: right;
+            margin-top: -17.5cm;
+            margin-right: -14.3cm;
+        }
+        .media3 {
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 8cm;
+            height: 14.7cm;
+            margin-top: -17cm;
+            display: block;
+            overflow: auto;
+            float: right;
+            margin-right: -0.8cm;
+        }
+        button {
+            overflow: hidden;
+            color: white;
+            font-size: 25px;
+            max-height: auto;
+            background-color: rgba(0, 0, 255, 0.219);
+            margin: 2.5px;
+
+        }
+        .butt {
+            display: flex;
+            position: relative;
+            width: 63%;
+            height: 1.85cm;
+            margin-top: -2cm;
+            float: right;
+            gap: 5px;
+            float: right;
+            margin-right: -14.5cm;
+        }
+        .pic {
+            
+            height: 18.5cm;
+            background-color: gray;
+            width: 100%;
+        }
+        .anim {
+            
+            overflow:auto;
+            height: 18.5cm;
+            display: flex;
+            gap: 10px;
+            width: 100%;
+           
+
+        }
+        .imga {
+            width: 40%;;
+            position: relative;
+            animation-name: frame;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-play-state: running;
+            
+            animation-direction: alternate-reverse;
+        }
+        @media only screen and (max-width: 600px){
+            .im {
+                height: 7cm;
+                position: relative;
+                width: 5cm;
+                
+            }
+            .im1 {
+                position: relative;
+            }
+            .media {
+                width: 100%;
+                height: 8.9cm;
+                
+                
+            }
+            .media1 {
+                margin-top: -10cm;
+                height: 10cm;
+                margin-right: 1px;
+             
+            }
+            .media3 {
+                margin-top: -6.5cm;
+                width: 4cm;
+                height: 6.5cm;
+                float: right;
+                margin-right: 0cm;
+
+            }
+            button {
+                font-size: 15px;
+            }
+            .butt {
+                margin-right: -1.2cm;
+                margin-top: -0.1cm;
+                width: 15cm;
+            }
+            .pic {
+                position: relative;
+                
+                height: 10cm;
+                width: 100%;
+            }
+            .imga {
+                height: 10cm;
+            }
+            .anim {
+                height: 8cm;
+            }
+        }
+        @keyframes frame {
+            from {right: 0px;
+                border-left: 100px solid;
+                border-left-color: blue;
+            }
+            to {
+                right: 20cm;
+                
+                border-left: 20px solid red;
+            }
+        }
+        body {
+            background-color: rgb(255, 255, 255);
+            display: block;
+            margin: 0px;
+            max-width: 100%;
+        }
+
+
+        audio {
+            background-color: blue;
+        }
+
+
+        .hov {
+            height: 1.90cm;
+        }
+        .hov:hover {
+            height: 2cm;
+        }
+        .start {
+            width: 3.5cm;
+            background-size: cover;
+            background-image: url('media/icon/play.png');
+            height: 2cm;
+        }
+        .txt {
+            position: relative;
+            margin-top: -2.5cm;
+            margin-left: 1cm;
+        }
+
+
+    </style>
+    <script>
+        function butt1(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b1.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m1.paused){
+                m1.play();
+                
+                
+            }else {
+                m1.pause();
+            }
+
+        }   
+    
+        function butt2(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b2.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b1,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m1,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m2.paused){
+                m2.play();
+                
+                
+            }else {
+                m2.pause()
+            }}
+    
+        function butt3(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b3.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b1,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m1,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m3.paused){
+                m3.play();
+                
+                
+            }else {
+                m3.pause()
+            }}
+    
+        function butt4(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b4.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b1,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m1,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m4.paused){
+                m4.play();
+                
+                
+            }else {
+                m4.pause()
+            }}
+    
+        function butt5(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b5.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b1,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m1,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m5.paused){
+                m5.play();
+                
+                
+            }else {
+                m5.pause()
+            }}
+    
+        function butt6(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b6.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b1,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m1,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m6.paused){
+                m6.play();
+                
+                
+            }else {
+                m1.pause()
+            }}
+        
+        function butt7(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b7.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b1,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m1,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m7.paused){
+                m7.play();
+                
+                
+            }else {
+                m7.pause()
+            }}
+
+        function butt8(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b8.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b1,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m1,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m8.paused){
+                m8.play();
+                
+                
+            }else {
+                m8.pause()
+            }}
+        
+        function butt9(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b9.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b1,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m1,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m9.paused){
+                m9.play();
+                
+                
+            }else {
+                m9.pause()
+            }}
+        
+        function butt10(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b10.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b1,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m1,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m10.paused){
+                m10.play();
+                
+                
+            }else {
+                m10.pause()
+            }}
+
+        function butt11(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b11.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b1,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m1,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m11.paused){
+                m11.play();
+                
+                
+            }else {
+                m11.pause()
+            }}
+        function butt12(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b12.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b1,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m1,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m12.paused){
+                m12.play();
+                
+                
+            }else {
+                m12.pause()
+            }}
+
+        function butt13(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b13.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b1,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m1,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m13.paused){
+                m13.play();
+                
+                
+            }else {
+                m13.pause()
+            }}
+
+        function butt14(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b14.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b1,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m1,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m14.paused){
+                m14.play();
+                
+                
+            }else {
+                m14.pause()
+            }}
+        
+        function butt15(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b15.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b1,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m1,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m15.paused){
+                m15.play();
+                
+                
+            }else {
+                m15.pause()
+            }}
+
+        function butt16(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b16.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b1,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m1,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m16.paused){
+                m16.play();
+                
+                
+            }else {
+                m16.pause()
+            }}
+
+        function butt17(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b17.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b1,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m1,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m17.paused){
+                m17.play();
+                
+                
+            }else {
+                m17.pause()
+            }}
+
+        function butt18(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b18.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b1,b19,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m1,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m18.paused){
+                m18.play();
+                
+                
+            }else {
+                m18.pause()
+            }}
+
+        function butt19(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b19.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b1,b20,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m1,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m19.paused){
+                m19.play();
+                
+                
+            }else {
+                m19.pause()
+            }}
+
+        function butt20(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b20.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b1,b21,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m1,m21,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m20.paused){
+                m20.play();
+                
+                
+            }else {
+                m20.pause()
+            }}
+
+        function butt21(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b21.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b1,b22,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m1,m22,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m21.paused){
+                m21.play();
+                
+                
+            }else {
+                m21.pause()
+            }}
+
+        function butt22(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b22.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b1,b23,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m1,m23,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m22.paused){
+                m22.play();
+                
+                
+            }else {
+                m22.pause()
+            }}
+
+        function butt23(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b23.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b1,b24,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m1,m24,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m23.paused){
+                m23.play();
+                
+                
+            }else {
+                m23.pause()
+            }}
+
+        function butt24(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b24.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b1,b25,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m1,m25,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m24.paused){
+                m24.play();
+                
+                
+            }else {
+                m24.pause()
+            }}
+
+        function butt25(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b25.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b1,b26,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m1,m26,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m25.paused){
+                m25.play();
+                
+                
+            }else {
+                m25.pause()
+            }}
+
+        function butt26(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b26.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b1,b27,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m1,m27,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m26.paused){
+                m26.play();
+                
+                
+            }else {
+                m26.pause()
+            }}
+
+        function butt27(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b4.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b1,b28];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m1,m28];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m27.paused){
+                m27.play();
+                
+                
+            }else {
+                m27.pause()
+            }}
+
+        function butt28(){
+            // importing button
+            const b1=document.getElementById('b1');
+            const b2=document.getElementById('b2');
+            const b3=document.getElementById('b3');
+            const b4=document.getElementById('b4');
+            const b5=document.getElementById('b5');
+            const b6=document.getElementById('b6');
+            const b7=document.getElementById('b7');
+            const b8=document.getElementById('b8');
+            const b9=document.getElementById('b9');
+            const b10=document.getElementById('b10');
+            const b11=document.getElementById('b11');
+            const b12=document.getElementById('b12');
+            const b13=document.getElementById('b13');
+            const b14=document.getElementById('b14');
+            const b15=document.getElementById('b15');
+            const b16=document.getElementById('b16');
+            const b17=document.getElementById('b17');
+            const b18=document.getElementById('b18');
+            const b19=document.getElementById('b19');
+            const b20=document.getElementById('b20');
+            const b21=document.getElementById('b21');
+            const b22=document.getElementById('b22');
+            const b23=document.getElementById('b23');
+            const b24=document.getElementById('b24');
+            const b25=document.getElementById('b25');
+            const b26=document.getElementById('b26');
+            const b27=document.getElementById('b27');
+            const b28=document.getElementById('b28');
+
+            // importing music
+            const m1 = document.getElementById('m1');
+            const m2 = document.getElementById('m2');
+            const m3 = document.getElementById('m3');
+            const m4 = document.getElementById('m4');
+            const m5 = document.getElementById('m5');
+            const m6 = document.getElementById('m6');
+            const m7 = document.getElementById('m7');
+            const m8 = document.getElementById('m8');
+            const m9 = document.getElementById('m9');
+            const m10 = document.getElementById('m10');
+            const m11 = document.getElementById('m11');
+            const m12 = document.getElementById('m12');
+            const m13 = document.getElementById('m13');
+            const m14 = document.getElementById('m14');
+            const m15 = document.getElementById('m15');
+            const m16 = document.getElementById('m16');
+            const m17 = document.getElementById('m17');
+            const m18 = document.getElementById('m18');
+            const m19 = document.getElementById('m19');
+            const m20 = document.getElementById('m20');
+            const m21 = document.getElementById('m21');
+            const m22 = document.getElementById('m22');
+            const m23 = document.getElementById('m23');
+            const m24 = document.getElementById('m24');
+            const m25 = document.getElementById('m25');
+            const m26 = document.getElementById('m26');
+            const m27 = document.getElementById('m27');
+            const m28 = document.getElementById('m28');
+
+            b28.style.backgroundColor='blue';
+
+
+            // button list
+            const blist = [b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15,b16,b17,b18,b19,b20,b21,b22,b23,b24,b25,b26,b27,b1];
+            // music list 
+            const mlist = [m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m1];
+
+            for (let s of blist){
+                s.style.backgroundColor= 'rgba(0, 0, 255, 0.219)';
+            }
+
+            for (let i of mlist){
+                if(i.paused){
+                    
+                }else{
+                    i.pause();
+                }
+                
+            }
+            if (m28.paused){
+                m28.play();
+                
+                
+            }else {
+                m28.pause()
+            }}
+    </script>
+</head>
+<body>
+    <div class="head">
+        <div class="media">
+            <div class="im">
+                <img class="im1" src="media/luna/back.jpg" alt="">
+            </div>
+            <img class="media1" src="media/luna/music.jpg" alt="music">
+            <div class="media3">
+               <button id="b1" style="max-height: 1cm;" onclick="butt1()">ADONAÏ by Vestine and Dorcas</button>
+               <button id="b2" style="max-height: 1cm;" onclick="butt2()">Ahadi Zake Marion Shako</button>
+               <button id="b3" style="max-height: 1cm;" onclick="butt3()">Impamvuz'ibifatika Papi Clever & Dorcas</button>
+               <button id="b4" style="max-height: 1cm;" onclick="butt4()">NZAGERAYO by ADRIEN</button>
+               <button id="b5" style="max-height: 1cm;" onclick="butt5()">Neema ya Goligota Gaby Kamanzi</button>
+               <button id="b6" style="max-height: 1cm;" onclick="butt6()">Nzohaguruka ndirimbe</button>
+               <button id="b7" style="max-height: 1cm;" onclick="butt7()">IRIBA by Vestine and Dorcas</button>
+               <button id="b8" style="max-height: 1cm;" onclick="butt8()">Nahawe Ijambo by Vestine and Dorcas</button>
+               <button id="b9" style="max-height: 1cm;" onclick="butt9()">WAMBAYE HAFI MANA BY MURORUNKWERE ALICE</button>
+               <button id="b10" style="max-height: 1cm;" onclick="butt10()">NDAGUKUNDA By Clarisse Karasira</button>
+               <button id="b11" style="max-height: 1cm;" onclick="butt11()">Ma vie by Social Mula</button>
+               <button id="b12" style="max-height: 1cm;" onclick="butt12()">ISEZERANO by gusto</button>
+               <button id="b13" style="max-height: 1cm;" onclick="butt13()">MiLELE by element</button>
+               <button id="b14" style="max-height: 1cm;" onclick="butt14()">Kashe by element</button>
+               <button id="b15" style="max-height: 1cm;" onclick="butt15()">Running To You</button>
+               <button id="b16" style="max-height: 1cm;" onclick="butt16()">My Baby</button>
+               <button id="b17" style="max-height: 1cm;" onclick="butt17()">Love me hard by bruce</button>
+               <button id="b18" style="max-height: 1cm;" onclick="butt18()">BANA by chaffi</button>
+               <button id="b19" style="max-height: 1cm;" onclick="butt19()">Mtasubiri by diamond</button>
+               <button id="b20" style="max-height: 1cm;" onclick="butt20()">ITAMPORIZE by dramati</button>
+               <button id="b21" style="max-height: 1cm;" onclick="butt21()">RAHA TU by kidumu</button>
+               <button id="b22" style="max-height: 1cm;" onclick="butt22()">Jana Nanje by we love music</button>
+               <button id="b23" style="max-height: 1cm;" onclick="butt23()">UMUNYENGA by naason</button>
+               <button id="b24" style="max-height: 1cm;" onclick="butt24()">l'encre de tes yeux</button>
+               <button id="b25" style="max-height: 1cm;" onclick="butt25()">mon logo by we love music</button>
+               <button id="b26" style="max-height: 1cm;" onclick="butt26()">DEMAIN by maitre Gims</button>
+               <button id="b27" style="max-height: 1cm;" onclick="butt27()">Little Bit Bette</button>
+               <button id="b28" style="max-height: 1cm;" onclick="butt28()">corazon by fernando</button>
+               
+
+
+            </div>
+            <div class="butt">
+                <button class="hov" style="background-image: url('media/icon/back.png');width: 3cm;background-size: cover;">
+                </button>
+                <a class="start" href="queen.html"></a>
+                    
+                </button>
+                <button class="hov" style="background-image: url('media/icon/pause.png');width: 3.5cm;background-size: cover;"></button>
+                <button class="hov" style="background-image: url('media/icon/next.png');width: 3cm;background-size: cover;"></button>
+                <div>
+                    <audio id="m1" src="media/luna/ADONAÏ_by_Vestine_and_Dorcas__official_video_2021_(256k).mp3" ></audio>
+                    <audio id="m2" src="media/luna/Ahadi_Zake_-_Marion_Shako_[Skiza_71112060]_Please_subscribe_to_this_channel(256k).mp3"></audio>
+                    <audio id="m3" src="media/luna/Impamvu_z_ibifatika_-_Papi_Clever___Dorcas_ft_LIC_band_-__Video_lyrics_2020_(256k).mp3" ></audio>
+                    <audio id="m4" src="media/luna/NZAGERAYO_by_ADRIEN___Official_Lyric_Video_(251).mp3" ></audio>
+                    <audio id="m5" src="media/luna/Neema_ya_Goligota_-_Gaby_Kamanzi__Official_Video_(251).mp3" ></audio>
+                    <audio id="m6" src="media/luna/Nzohaguruka_Ndirimbe___Josh_Ishimwe__Gakondo_style_(256k).mp3" ></audio>
+                    <audio id="m7" src="media/luna/IRIBA__-__Vestine_and_Dorcas__Official_Video_2024_(256k).mp3" ></audio>
+                    <audio id="m8" src="media/luna/Nahawe_Ijambo_by_Vestine_and_Dorcas_Official_Video2020(256k).mp3" ></audio>
+                    <audio id="m9" src="media/luna/WAMBAYE_HAFI_MANA_BY_MURORUNKWERE_ALICE_.(256k).mp3" ></audio>
+                    <audio id="m10" src="media/luna/NDAGUKUNDA_By_Clarisse_Karasira_ft_Dejoi__Official_Lyrics_2021_(256k).mp3" ></audio>
+                    <audio id="m11" src="media/luna/Ma_Vie_by_Social_Mula__Official_Video_(256k).mp3" ></audio>
+                    <audio id="m12" src="media/luna/Melanin_Boy_ISEZERANO__Official_music_video_(256k).mp3" ></audio>
+                    <audio id="m13" src="media/luna/Element_Eleéeh_-_MiLELE__Official_Music_Video_(251).mp3" ></audio>
+                    <audio id="m14" src="media/luna/Element_Eleéeh_-_Kashe__Visualizer_(251).mp3" ></audio>
+                    <audio id="m15" src="media/luna/Chiké___Simi_–_Running__To_You__[Official_Video](256k).mp3" ></audio>
+                    <audio id="m16" src="media/luna/Diamond_Platnumz_Ft_Chike_-_My_Baby_(Official_Music_Video)(256k).mp3" ></audio>
+                    <audio id="m17" src="media/luna/Bruce_Melodie_-_Love_me_hard__Official_Video_(256k).mp3" ></audio>
+                    <audio id="m18" src="media/luna/BANA_-_Shaffy_Feat_Chriss_Eazy_(Visualizer)(256k).mp3" ></audio>
+                    <audio id="m19" src="media/luna/Diamond_Platnumz_Ft_Zuchu_-_Mtasubiri_(Music_Video)(256k).mp3" ></audio>
+                    <audio id="m20" src="media/luna/Drama_T_-_ITAMPORIZE__(Official_Music_Video)(256k).mp3" ></audio>
+                    <audio id="m21" src="media/luna/RAHA_TU_—_Ado_Josan_Feat__Kidum__Official_video_(256k).mp3" ></audio>
+                    <audio id="m22" src="media/luna/We_Love_Muzika_-_Jana_Nanje(256k).mp3" ></audio>
+                    <audio id="m23" src="media/luna/UMUNYENGA_by_Naason_Solist__official_Video_(256k).mp3" ></audio>
+                    <audio id="m24" src="media/luna/Francis_Cabrel_-_L’encre_de_tes_yeux__Paroles_(256k).mp3" ></audio>
+                    <audio id="m25" src="media/luna/Kadie_Kay_-_MON_LOGO_-_ft_We_Love_Muzika__OFFICIAL_VIDEO_(256k).mp3" ></audio>
+                    <audio id="m26" src="media/luna/GIMS___Carla_Bruni_-_DEMAIN__Audio_Officiel_(256k).mp3" ></audio>
+                    <audio id="m27" src="media/luna/Caleb_Hearn___ROSIE_-_Little_Bit_Better__Official_Lyric_Video_(256k).mp3" ></audio>
+                    <audio id="m28" src="media/luna/Fernando_-_Korazon(256k).mp3" ></audio>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="pic" onmouseover="on_pic()" onmouseleave="document.getElementById('onpic').pause()" >
+        <script>
+            function on_pic(){
+                const a = document.getElementById('onpic');
+                const m1 = document.getElementById('m1');
+                const m2 = document.getElementById('m2');
+                const m3 = document.getElementById('m3');
+                const m4 = document.getElementById('m4');
+                const m5 = document.getElementById('m5');
+                const m6 = document.getElementById('m6');
+                const m7 = document.getElementById('m7');
+                const m8 = document.getElementById('m8');
+                const m9 = document.getElementById('m9');
+                const m10 = document.getElementById('m10');
+                const m11 = document.getElementById('m11');
+                const m12 = document.getElementById('m12');
+                const m13 = document.getElementById('m13');
+                const m14 = document.getElementById('m14');
+                const m15 = document.getElementById('m15');
+                const m16 = document.getElementById('m16');
+                const m17 = document.getElementById('m17');
+                const m18 = document.getElementById('m18');
+                const m19 = document.getElementById('m19');
+                const m20 = document.getElementById('m20');
+                const m21 = document.getElementById('m21');
+                const m22 = document.getElementById('m22');
+                const m23 = document.getElementById('m23');
+                const m24 = document.getElementById('m24');
+                const m25 = document.getElementById('m25');
+                const m26 = document.getElementById('m26');
+                const m27 = document.getElementById('m27');
+                const m28 = document.getElementById('m28');
+
+                const mlist = [m1,m2,m3,m4,m5,m6,m7,m8,m9,m10,m11,m12,m13,m14,m15,m16,m17,m18,m19,m20,m21,m22,m23,m24,m25,m26,m27,m28];
+                for (let i of mlist){
+                    if (i.paused){
+                        
+
+                    }else{i.paused};
+                }
+                a.play();
+            }
+        </script>
+        <div class="anim">
+            <img src="media/luna/im4.jpg" alt="" class="imga">
+            <img src="media/luna/im2.jpg" alt="" class="imga">
+            <img src="media/luna/im1.jpg" alt="" class="imga">
+            <img src="media/luna/im3.jpg" alt="" class="imga">
+            <img  src="media/luna/IMG-20231014-WA0102.jpg" alt="" class="imga">
+            <img  src="media/luna/back.jpg" alt="" class="imga">
+            <audio id="onpic" src="media/luna/Francis_Cabrel_-_L’encre_de_tes_yeux__Paroles_(256k).mp3"></audio>
+        </div>
+
+    </div>
+    <div class="txt">
+        <h1>💖💖I love you miamor💕💖💖💖</h1>
+
+    </div>
+    
+</body>
+</html>
